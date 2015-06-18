@@ -28,18 +28,15 @@
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
 
-    // pull-to-refresh
+    // START pull-to-refresh
     UITableViewController *tableViewController = [[UITableViewController alloc] init];
     tableViewController = [[UITableViewController alloc] init];
     tableViewController.tableView = self.tableView;
-    
     self.refresh = [[UIRefreshControl alloc] init];
     self.refresh.tintColor = [UIColor grayColor];
     self.refresh.attributedTitle = [[NSAttributedString alloc] initWithString:@"Pull to Refresh..."];
     [self.refresh addTarget:self action:@selector(requestAPIForMovies) forControlEvents:UIControlEventValueChanged];
-
     tableViewController.refreshControl = self.refresh;
-
     // END pull-to-refresh
     
     [self requestAPIForMovies];
@@ -72,9 +69,7 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-//    UITableViewCell *cell = [[UITableViewCell alloc] init]; // Create new row when scroll
     MovieCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MyMovieCell" forIndexPath:indexPath];
-//    cell.textLabel.text = [NSString stringWithFormat:@"Row %ld", (long)indexPath.row];
     NSDictionary *movie = self.movies[indexPath.row];
     cell.titleLabel.text = movie[@"title"];
     cell.synopsisLabel.text = movie[@"synopsis"];
@@ -94,9 +89,6 @@
         failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error) {
         }
      ];
-    //[cell.posterView setImageWithURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:hotelImageUrl]]
-
-//    NSLog(@"Row %ld", (long)indexPath.row);
     return cell;
 }
 
