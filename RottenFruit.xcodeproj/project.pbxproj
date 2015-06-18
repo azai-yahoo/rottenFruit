@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1DEB403FD0646046072BE7EF /* libPods-RottenFruit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FA564E666DF4DD30A99E16A /* libPods-RottenFruit.a */; };
+		27337BEC1B3004C100CC5425 /* MoviesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27337BEB1B3004C100CC5425 /* MoviesViewController.m */; };
+		276A090B1B31AFE800AE3A9A /* MovieCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 276A090A1B31AFE800AE3A9A /* MovieCell.m */; };
 		278CCB7C1B2A9FC9005E38F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 278CCB7B1B2A9FC9005E38F8 /* main.m */; };
 		278CCB7F1B2A9FC9005E38F8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 278CCB7E1B2A9FC9005E38F8 /* AppDelegate.m */; };
 		278CCB821B2A9FC9005E38F8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 278CCB811B2A9FC9005E38F8 /* ViewController.m */; };
@@ -14,6 +17,7 @@
 		278CCB871B2A9FC9005E38F8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 278CCB861B2A9FC9005E38F8 /* Images.xcassets */; };
 		278CCB8A1B2A9FC9005E38F8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 278CCB881B2A9FC9005E38F8 /* LaunchScreen.xib */; };
 		278CCB961B2A9FC9005E38F8 /* RottenFruitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 278CCB951B2A9FC9005E38F8 /* RottenFruitTests.m */; };
+		27CDDCBA1B304BBA00E140C5 /* Pods_RottenFruit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27CDDCB91B304BBA00E140C5 /* Pods_RottenFruit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +31,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		010B04271DEB892DB25466D5 /* Pods-RottenFruit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RottenFruit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RottenFruit/Pods-RottenFruit.debug.xcconfig"; sourceTree = "<group>"; };
+		27337BEA1B3004C100CC5425 /* MoviesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoviesViewController.h; sourceTree = "<group>"; };
+		27337BEB1B3004C100CC5425 /* MoviesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoviesViewController.m; sourceTree = "<group>"; };
+		276A09091B31AFE800AE3A9A /* MovieCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieCell.h; sourceTree = "<group>"; };
+		276A090A1B31AFE800AE3A9A /* MovieCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieCell.m; sourceTree = "<group>"; };
 		278CCB761B2A9FC9005E38F8 /* RottenFruit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RottenFruit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		278CCB7A1B2A9FC9005E38F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		278CCB7B1B2A9FC9005E38F8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +49,9 @@
 		278CCB8F1B2A9FC9005E38F8 /* RottenFruitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RottenFruitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		278CCB941B2A9FC9005E38F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		278CCB951B2A9FC9005E38F8 /* RottenFruitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RottenFruitTests.m; sourceTree = "<group>"; };
+		27CDDCB91B304BBA00E140C5 /* Pods_RottenFruit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_RottenFruit.framework; path = "Pods/../build/Debug-iphoneos/Pods_RottenFruit.framework"; sourceTree = "<group>"; };
+		3FA564E666DF4DD30A99E16A /* libPods-RottenFruit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RottenFruit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7FC5245B0A367AE21B4228B /* Pods-RottenFruit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RottenFruit.release.xcconfig"; path = "Pods/Target Support Files/Pods-RottenFruit/Pods-RottenFruit.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +59,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27CDDCBA1B304BBA00E140C5 /* Pods_RottenFruit.framework in Frameworks */,
+				1DEB403FD0646046072BE7EF /* libPods-RottenFruit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +80,8 @@
 				278CCB781B2A9FC9005E38F8 /* RottenFruit */,
 				278CCB921B2A9FC9005E38F8 /* RottenFruitTests */,
 				278CCB771B2A9FC9005E38F8 /* Products */,
+				CFADBB2B9570C52B20957D96 /* Pods */,
+				370D6BC8BC6949459E6E36C1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,9 +102,13 @@
 				278CCB801B2A9FC9005E38F8 /* ViewController.h */,
 				278CCB811B2A9FC9005E38F8 /* ViewController.m */,
 				278CCB831B2A9FC9005E38F8 /* Main.storyboard */,
+				27337BEA1B3004C100CC5425 /* MoviesViewController.h */,
+				27337BEB1B3004C100CC5425 /* MoviesViewController.m */,
 				278CCB861B2A9FC9005E38F8 /* Images.xcassets */,
 				278CCB881B2A9FC9005E38F8 /* LaunchScreen.xib */,
 				278CCB791B2A9FC9005E38F8 /* Supporting Files */,
+				276A09091B31AFE800AE3A9A /* MovieCell.h */,
+				276A090A1B31AFE800AE3A9A /* MovieCell.m */,
 			);
 			path = RottenFruit;
 			sourceTree = "<group>";
@@ -119,6 +139,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		370D6BC8BC6949459E6E36C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27CDDCB91B304BBA00E140C5 /* Pods_RottenFruit.framework */,
+				3FA564E666DF4DD30A99E16A /* libPods-RottenFruit.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CFADBB2B9570C52B20957D96 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				010B04271DEB892DB25466D5 /* Pods-RottenFruit.debug.xcconfig */,
+				F7FC5245B0A367AE21B4228B /* Pods-RottenFruit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +164,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 278CCB991B2A9FC9005E38F8 /* Build configuration list for PBXNativeTarget "RottenFruit" */;
 			buildPhases = (
+				058AF3AFCE5CE2BE2F55AB94 /* Check Pods Manifest.lock */,
 				278CCB721B2A9FC9005E38F8 /* Sources */,
 				278CCB731B2A9FC9005E38F8 /* Frameworks */,
 				278CCB741B2A9FC9005E38F8 /* Resources */,
+				4C6771EB9478B67B4B72186A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -214,13 +254,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		058AF3AFCE5CE2BE2F55AB94 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4C6771EB9478B67B4B72186A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RottenFruit/Pods-RottenFruit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		278CCB721B2A9FC9005E38F8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				278CCB821B2A9FC9005E38F8 /* ViewController.m in Sources */,
+				276A090B1B31AFE800AE3A9A /* MovieCell.m in Sources */,
 				278CCB7F1B2A9FC9005E38F8 /* AppDelegate.m in Sources */,
+				27337BEC1B3004C100CC5425 /* MoviesViewController.m in Sources */,
 				278CCB7C1B2A9FC9005E38F8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,8 +416,16 @@
 		};
 		278CCB9A1B2A9FC9005E38F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 010B04271DEB892DB25466D5 /* Pods-RottenFruit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Pods-RottenFruit",
+					"${PODS_ROOT}/Headers",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+					"${PODS_ROOT}/Headers/AFNetworking",
+				);
 				INFOPLIST_FILE = RottenFruit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -351,8 +434,16 @@
 		};
 		278CCB9B1B2A9FC9005E38F8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7FC5245B0A367AE21B4228B /* Pods-RottenFruit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Pods-RottenFruit",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+					"${PODS_ROOT}/Headers/AFNetworking",
+					"${PODS_ROOT}/Headers",
+				);
 				INFOPLIST_FILE = RottenFruit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -412,6 +503,7 @@
 				278CCB9B1B2A9FC9005E38F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		278CCB9C1B2A9FC9005E38F8 /* Build configuration list for PBXNativeTarget "RottenFruitTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +512,7 @@
 				278CCB9E1B2A9FC9005E38F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
