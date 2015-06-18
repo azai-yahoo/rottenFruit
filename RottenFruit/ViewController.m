@@ -30,8 +30,25 @@
     self.titleLabel.text = self.movie[@"title"];
     self.synopsisLabel.text = self.movie[@"synopsis"];
     NSString *posterURLString = [self.movie valueForKeyPath:@"posters.detailed"];
-    posterURLString = [self convertPosterUrlStringToHighRes:posterURLString];
-    [self.posterView setImageWithURL:[NSURL URLWithString:posterURLString]];
+    NSString *posterURLStringHiRes = [self convertPosterUrlStringToHighRes:posterURLString];
+
+    [self.posterView setImageWithURLRequest:([NSURLRequest requestWithURL:[NSURL URLWithString:posterURLString]]) placeholderImage:nil
+        success:^(NSURLRequest *request , NSHTTPURLResponse *response , UIImage *image ) {
+            self.posterView.alpha = 0.0;
+            self.posterView.image = image;
+            [UIView animateWithDuration:0.25
+                 animations:^{
+                     self.posterView.alpha = 1.0;
+                 }
+            ];
+
+        }
+        failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error) {
+        }
+    ];
+    // Apply hi-resolution poster
+    [self.posterView setImageWithURL:[NSURL URLWithString:posterURLStringHiRes]];
+
 }
 
 - (void)didReceiveMemoryWarning {

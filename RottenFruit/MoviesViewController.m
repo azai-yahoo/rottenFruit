@@ -17,6 +17,7 @@
 
 @property (strong, nonatomic) NSArray *movies;
 @property (strong, nonatomic) UIRefreshControl *refresh;
+@property (strong, nonatomic) UIImage *posterImage;
 @end
 
 @implementation MoviesViewController
@@ -79,7 +80,22 @@
     cell.synopsisLabel.text = movie[@"synopsis"];
 
     NSString *posterUrlString = [movie valueForKeyPath:@"posters.thumbnail"];
-    [cell.posterView setImageWithURL:[NSURL URLWithString:posterUrlString]];
+    [cell.posterView setImageWithURLRequest:([NSURLRequest requestWithURL:[NSURL URLWithString:posterUrlString]]) placeholderImage:nil
+        success:^(NSURLRequest *request , NSHTTPURLResponse *response , UIImage *image ) {
+            cell.posterView.alpha = 0.0;
+            cell.posterView.image = image;
+            [UIView animateWithDuration:0.25
+                animations:^{
+                    cell.posterView.alpha = 1.0;
+                }
+            ];
+
+        }
+        failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error) {
+        }
+     ];
+    //[cell.posterView setImageWithURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:hotelImageUrl]]
+
 //    NSLog(@"Row %ld", (long)indexPath.row);
     return cell;
 }
@@ -98,6 +114,7 @@
     NSDictionary *movie = self.movies[indexPath.row];
     ViewController *destinationVC = segue.destinationViewController;
     destinationVC.movie = movie;
+    destinationVC.posterView = cell.posterView;
 }
 
 @end

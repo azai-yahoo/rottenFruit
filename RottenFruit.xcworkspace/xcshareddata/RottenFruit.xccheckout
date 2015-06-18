@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>14842EE3-77A1-49D4-8CC2-22F9657DD25A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>RottenFruit</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B836364A659A6A9A7B56653DD5D6FC37B56C835D</key>
+		<string>https://github.com/azai-yahoo/rottenFruit.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>RottenFruit.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B836364A659A6A9A7B56653DD5D6FC37B56C835D</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/azai-yahoo/rottenFruit.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B836364A659A6A9A7B56653DD5D6FC37B56C835D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B836364A659A6A9A7B56653DD5D6FC37B56C835D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>RottenFruit</string>
+		</dict>
+	</array>
+</dict>
+</plist>
